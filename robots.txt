@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chartalgosolutionbykawal.github.io/ChAlgoX_Pro_Tool/sitemap.xml
