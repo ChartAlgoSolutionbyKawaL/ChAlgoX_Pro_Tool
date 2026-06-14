@@ -4262,7 +4262,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:40px 0 2
     <a href="#disclaimer" onclick="openTermsModal()" style="color: var(--gold); text-decoration: none; margin: 0 10px;">SEBI Disclaimer</a>
   </p>
   <p style="margin-top: 10px;">
-    © 2024 ChAlgoX. All rights reserved. Jurisdiction: Maharashtra, India. <br>
+    © 2025 ChAlgoX. All rights reserved. Jurisdiction: Maharashtra, India. <br>
     <strong style="color: #ff5252;">Not intended for minors or retail investors without prior market knowledge.</strong>
   </p>
 </div>
@@ -4270,7 +4270,14 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:40px 0 2
 <!-- SIMPLE TERMS MODAL -->
 <div id="terms-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center;">
   <div style="background: var(--card); padding: 30px; border-radius: 12px; max-width: 600px; width: 90%; max-height: 80vh; overflow-y: auto; border: 1px solid var(--gold);">
-    <h3 style="color: var(--gold); margin-bottom: 15px;">Terms of Service & Legal Disclaimer</h3>
+    <!-- CLOSE BUTTON (Top Right) -->
+    <button onclick="document.getElementById('terms-modal').style.display='none'" 
+            style="position: absolute; top: 12px; right: 16px; background: none; border: none; color: var(--muted); font-size: 1.8rem; cursor: pointer; line-height: 1; padding: 4px; transition: 0.2s;"
+            onmouseover="this.style.color='var(--gold)'" 
+            onmouseout="this.style.color='var(--muted)'">
+      &times;
+    </button>
+	<h3 style="color: var(--gold); margin-bottom: 15px;">Terms of Service & Legal Disclaimer</h3>
     <ul style="color: var(--text); font-size: 0.9rem; line-height: 1.6; padding-left: 20px;">
       <li><strong>Educational Use Only:</strong> ChAlgoX is a TradingView framework tool for educational purposes. It is not a SEBI-registered advisory service.</li>
       <li><strong>No Refunds:</strong> As this is a digital access product provisioned via TradingView private invites, refunds are not available once access is granted.</li>
@@ -5300,7 +5307,6 @@ function switchCustomTab(index) {
 </div>
 
 <!-- ═══ CHATBOT JAVASCRIPT ═══ -->
-(function(){
 <script>
 'use strict';
 
